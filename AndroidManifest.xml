@@ -20,6 +20,7 @@
     <permission
             android:name="com.wizrocket.exampleapp.permission.C2D_MESSAGE"
             android:protectionLevel="signature"/>
+
     <uses-permission android:name="com.wizrocket.exampleapp.permission.C2D_MESSAGE"/>
 
     <application
@@ -34,20 +35,11 @@
 
         <meta-data
                 android:name="WIZROCKET_TOKEN"
-                android:value="000-001"/>;
+                android:value="000-001"/>
 
-        <activity
-                android:name="SplashActivity"
-                android:label="SplashActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-        </activity>
-
-        <activity
-                android:name="HomeActivity"
-                android:label="HomeActivity"/>
+        <meta-data
+                android:name="GCM_SENDER_ID"
+                android:value="441879450085"/>
 
         <activity
                 android:name="com.wizrocket.android.sdk.InAppNotificationActivity"
@@ -72,6 +64,20 @@
                 <category android:name="com.wizrocket.exampleapp"/>
             </intent-filter>
         </receiver>
+
+        <activity
+                android:name="SplashActivity"
+                android:label="SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:name="HomeActivity"
+                android:label="HomeActivity"/>
+
 
         <meta-data
                 android:name="com.google.android.gms.version"
