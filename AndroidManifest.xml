@@ -39,7 +39,7 @@
 
         <meta-data
                 android:name="GCM_SENDER_ID"
-                android:value="441879450085"/>
+                android:value="id:441879450085"/>
 
         <activity
                 android:name="com.wizrocket.android.sdk.InAppNotificationActivity"
